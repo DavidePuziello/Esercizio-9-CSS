@@ -1,0 +1,103 @@
+article {
+    background-color: grey;
+    border-radius: 30px;
+
+}
+
+.MR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.inline img {
+    border-radius: 50%;
+    border: 1px solid;
+    height: 50px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+div h2 {
+    margin: 0;
+    margin-left: 65px;
+}
+
+div p {
+    margin: 2px;
+    margin-left: 65px;
+    color: white;
+}
+
+.inline {
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
+    padding-bottom: 20px;
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.main img {
+    width: 100%;
+}
+
+.move {
+    margin-left: 30px;
+}
+
+.footer {
+    height: 200px;
+}
+
+.footer p{
+    color: black;
+    margin: 8px;
+    margin-top: 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+html {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+ @media screen and (min-width: 375px) and (max-width: 626px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "uno due"
+        "tre .";
+        row-gap: 40px;
+    }
+    #uno {
+        grid-area: uno;
+    }
+    #due {
+        grid-area: due;
+    }
+    #tre {
+        grid-area: tre;
+    }
+ }
